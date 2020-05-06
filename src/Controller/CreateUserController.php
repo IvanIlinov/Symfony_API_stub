@@ -16,7 +16,5 @@ class CreateUserController extends AbstractController
             [
                 'token' => 'fsjkhSDLFHsdhjjgkdfjcmVhdGUsdXBkYXRlLGRlbGV0ZTtWYWNhbmN5OmNyZWF0ZSx1cGRhdGUsZGVsZXRl'
             ]);
-
-
     }
 }
