@@ -1,3 +1,81 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+#==========================================================
+GetToken:
+  path: /auth
+  controller: App\Controller\GetTokenController::get_token
+  methods: POST
+
+CreateUser:
+  path: /register
+  controller: App\Controller\CreateUserController::create
+  methods: POST
+
+#----------Student--------
+GetStudents:
+  path: /getStudents
+  controller: App\Controller\StudentController::getStudents
+  methods: GET
+
+CreateStudent:
+  path: /createStudent
+  controller: App\Controller\StudentController::createStudent
+  methods: POST
+
+GetStudent:
+  path: /getStudent/{id}
+  controller: App\Controller\StudentController::getStudent
+  methods: GET
+  requirements:
+    id: '\d+'
+
+UpdateStudent:
+  path: /updateStudent/{id}
+  controller: App\Controller\StudentController::updateStudent
+  methods: PATCH
+  requirements:
+    id: '\d+'
+
+DeleteStudent:
+  path: /deleteStudent/{id}
+  controller: App\Controller\StudentController::deleteStudent
+  methods: DELETE
+  requirements:
+    id: '\d+'
+
+#-----------Subject-----------
+GetSubjects:
+  path: /getSubjects
+  controller: App\Controller\SubjectController::getSubjects
+  methods: GET
+
+CreateSubject:
+  path: /createSubject
+  controller: App\Controller\SubjectController::createSubject
+  methods: POST
+
+GetSubject:
+  path: /getSubject/{id}
+  controller: App\Controller\SubjectController::getSubject
+  methods: GET
+  requirements:
+    id: '\d+'
+
+UpdateSubject:
+  path: /updateSubject/{id}
+  controller: App\Controller\SubjectController::updateSubject
+  methods: PATCH
+  requirements:
+    id: '\d+'
+
+DeleteSubject:
+  path: /deleteSubject/{id}
+  controller: App\Controller\SubjectController::deleteSubject
+  methods: DELETE
+  requirements:
+    id: '\d+'
+
+#=============================================================
+
+
